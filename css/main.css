@@ -1,0 +1,526 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root {
+    --main-color: rgba(209, 206, 206, 0.8); 
+    --white-color: rgba(255, 255, 255, 0.744);
+  }
+  
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    gap: 1rem;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* 
+T
+    I
+        T
+            L
+                E*/
+
+.title-card-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.title{
+    font-size: 2rem;
+    text-align: center;
+    border: none;
+    width: 100%;
+    border-radius: 3rem;
+    background-color: transparent;
+    color: var(--white-color);
+    font-weight: 800;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    letter-spacing: 0.15rem;
+}
+
+.title:focus{
+    color: gray;
+}
+
+/* 
+C
+    L
+        O
+            C
+                K */
+
+.clock{
+    width: 90%;
+    background-color: var(--main-color);
+    /* backdrop-filter: invert(80%); */
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    max-width: 300px;
+}
+
+.clock {
+    /* font-weight: 900; */
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+/* 
+C
+    A
+        R
+            D
+                S */
+
+.card-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    width: 280px;
+    /* height: 100%; */
+    background-color: var(--main-color);
+    /* backdrop-filter: blur(10px); */
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+}
+
+.card-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.card-1,
+.card-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+L
+    I
+        N
+            K
+                S */
+
+
+.added-links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* varje länk div som skapas */
+.user-link-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.user-link-div:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.user-link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.remove-link {
+    border: none;
+    background-color: var(--white-color);
+    cursor: pointer;
+    height: 1rem;
+    z-index: 500;
+}
+
+.remove-link:hover {
+    transform: scale(1.4) rotate(180deg);;
+    transition: 0.5s;
+}
+
+.add-link,
+.save-link{
+    background-color: rgba(132, 132, 132, 0.61);
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white-color);
+    font-weight: 300;
+    /* letter-spacing: 0.1rem; */
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.add-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.add-icon {
+    height: 1.2rem;
+    margin-right: 1rem;
+}
+
+.link-logo {
+    height: 1.5rem;
+}
+
+.card-2 .card-title {
+    margin-bottom: 1rem;
+}
+
+/* 
+W
+    E
+        A
+            T
+                H
+                    E
+                        R */
+
+.weather-card,
+.background-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.weather-days {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.weather-days p {
+    background-color: lightgray;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.weather-icon {
+    height: 3.5rem;
+}
+
+.location-input{
+    width: 78%;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    background-color: rgba(132, 132, 132, 0.61);
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white-color);
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.location-input::placeholder {
+    color: var(--white-color);
+    text-align: center;
+}
+
+.location-btn {
+    height: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.location-btn:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.forecast-title{
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    background-color: var(--white-color);
+    border-radius: 0.5rem;
+    padding: .2rem;
+    text-align: center;
+}
+
+/* 
+Q
+    U
+        O
+            T
+                E
+                    S */
+
+.quote-div {
+    width: 100%;
+    height: 80%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.quote {
+    font-size: 1.4rem;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    color: rgb(46, 45, 45);
+}
+
+.author {
+    text-align: end;
+}
+
+/* 
+N
+    O
+        T
+            E
+                S */
+
+.card-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.notepad {
+    width: 100%;
+    height: 90%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.482);
+    resize: none;
+}
+
+.notepad:focus{
+    border: none;
+}
+
+/* 
+B
+    A
+        C
+            K
+                G
+                    R
+                        O
+                            U
+                                N
+                                    D */
+
+.random-image {
+    width: 90%;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    max-width: 300px;
+}
+
+
+.random-image,
+.custom-background{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+.random-image:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.custom-background {
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.user-image-input{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+}
+
+.user-image-input:focus {
+    transform: scale(1.1);
+}
+
+.update-logo{
+    width: 2rem;
+}
+
+.update-logo:hover {
+    transform: rotate(180deg);
+    transition: 0.7s;
+}
+
+.image-url {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+/* 
+M
+    O
+        D
+            A
+                L*/
+
+.hidden-modal{
+    display: none;
+}
+
+.reveal-modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.824);
+    z-index: 1000; /* Increase the z-index value if necessary */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 1rem;
+    width: 70%;
+    max-width: 400px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-image: url(../images/small-link.png);
+    background-repeat: repeat;
+}
+
+.modal-inner-content{
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 0.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.modal-inner-content input {
+    width: 80%;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(201, 201, 201);
+    text-align: center;
+}
+
+.save-link:hover{
+    background-color: rgb(132, 132, 132);
+}
+
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(95, 92, 92);
+}
+
+.close:hover,
+.close:focus {
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* desktop breakpoint */
+@media (min-width: 900px) {
+    .title{
+        font-size: 3.5rem;
+    }
+}
+
+/* extra large desktop breakpoint */
+@media (min-width: 1100px) {
+    main {
+        height: 100vh;
+    }
+
+}

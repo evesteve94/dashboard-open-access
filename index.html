@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<body>
+    <main class="container">
+        <div class="clock" id="clock"> </div>
+
+        <div class="title-card-div">
+            <input class="title" id="title" placeholder="Choose Title + enter">
+            <div class="card-container">
+                <section class="card card-1">
+                    <h3 class="card-title">Quick Links</h3>
+                    <div class="added-links" id="added-links">
+                        <!-- user links here -->
+                    </div>
+                    <button class="add-link" id="add-link"><img class="add-icon" src="./images/add.png" alt="plus icon to add link"> Add Link</button>
+                </section>
+                <section class="card card-2">
+                    <h3 class="card-title" id="weather-title">Weather</h3>
+                    <div class="weather-card" id="weather-card"></div>
+                    <div class="location">
+                        <!-- <label for="locationInput">Enter Location:</label> -->
+                        <input type="text" id="locationInput" class="location-input" placeholder="Search city">
+                        <img src="./images/search.png" alt="search logo" class="location-btn" id="location-btn">
+                    </div>
+                </section>
+                <section class="card card-3">
+                    <h3 class="card-title">Quote of the Day</h3>
+                    <div class="quote-div" id="quote-div"></div>
+                </section>
+                <section class="card card-4">
+                    <h3 class="card-title">Notepad</h3>
+                    <textarea placeholder="type anything + press 'tab' to save" name="Notepad" class="notepad" id="notepad" cols="30" rows="10"></textarea>
+                </section>
+        </div>
+        </div>
+
+        <div class="background-div">
+            <div class="custom-background">
+                <label for="user-image-input">Customize Background</label>
+                <input type="text" class="user-image-input" id="user-image-input" placeholder="Keyword + Enter">
+            </div>
+            <button class="random-image" id="random-image">
+                <img src="./images/update.png" alt="update logo" class="update-logo">
+                Random background
+            </button>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="hidden-modal" id="myModal">
+            <div class="modal-content">
+                <span class="close" id="closeModalBtn">x</span>
+                <div class="modal-inner-content">
+                    <label for="link">Link:</label>
+                    <input type="text" id="link" placeholder="Enter link">
+                    <label for="link-title">Title:</label>
+                    <input type="text" id="link-title" placeholder="Enter title">
+                    <button class="save-link" id="save-link">Save Link</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <div class="image-url" id="imageUrl"></div>
+    <!-- <script src="./script/main.js"></script> -->
+    <script src="./script/clock.js"></script>
+    <script src="./script/user-title.js"></script>
+    <script src="./script/user-links.js"></script>
+    <script src="./script/weather.js"></script>
+    <script src="./script/quotes.js"></script>
+    <script src="./script/notepad.js"></script>
+    <script src="./script/background.js"></script>
+</body>
+</html>
