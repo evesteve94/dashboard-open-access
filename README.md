@@ -4,7 +4,7 @@ This website is coded in 100% vanilla JS, HTML and CSS by Eva 'evesteve' Bjölin
 
 Github accoount: evesteve94 (https://github.com/evesteve94)
 
-Netflify link: https://dashboard-evesteve.netlify.app/
+Netflify link: https://dashboard-evesteve-open-access.netlify.app/
 
 **Positives:**
 
